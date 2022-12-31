@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nation Bank</title>
+    <script>
+
+    function refresh() {
+    let refresh=1000; 
+    mytime=setTimeout('time()',refresh)
+    }
+
+    function time() {
+    let x = new Date()
+    document.getElementById('date').innerHTML = x;
+    refresh();
+    }
+
+</script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body onload=time();>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="worldbank.com"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <span id="date"></span>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Nation Bank</h1>
+        <p>We have the best solution for your business to grow.</p>
+        <button class="btn" id="btn">Get A Loan Now!</button>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                
+                <a href="loan.html">
+                <img src="img_1.jpeg" alt="loaning" id="img_1"> 
+                </a>
+                
+                <h2 class="h-secondary center">Loaning Service</h2>
+                <p class="center">One of the major goal of our bank loan is to lend to people who do not have ready cash. Nation bank loan can help an individual or a business in buying something as simple as a car or a home for which he doesn’t have a corpus, or it can help businesses to buy machinery or set up big units for which it doesn’t have money. The scope of our bank loan is vast, and the borrower can borrow as per their capacity depending on their creditworthiness.</p>
+                    
+            </div>
+            <div class="box">
+            
+                <a href="save.html">
+                <img src="img_2.jpg" alt="savings">
+                </a>
+                
+                <h2 class="h-secondary center">Saving Account</h2>
+                <p class="center">A savings account helps you earn interest on the deposited amount. One of the biggest advantages of saving account is unlike most other investment options, a savings bank account does not invest your money but still offers modest returns. All you need to do is to deposit money in your savings account to take advantage of this feature.Browse through the different investment options and you’ll see that a savings account is also the most affordable. You are simply required to keep the minimum balance in your account to keep earning interest. This minimum deposit amount can be different for every bank.
+
+                </p>
+            </div>
+            <div class="box">
+            
+                <a href="fund.html">
+                <img src="img_3.png" alt="funds">
+                </a>
+                
+                <h2 class="h-secondary center">Funds Transfer</h2>
+                <p class="center">You have the right to dispute a transaction completed by EFT. It helps merchants to access funds faster. It may reduce some of their bank fees, eliminates time spent by employees and deposits, and stops chances for fraud to occur. You can still pay for items without a debit or credit card. Customers can set up automatic payments with EFTs. Although ACH transactions are the most common way to create an automatic payment, an electronic funds transfer process can accomplish the same result. A merchant will pull funds from your account every time you have a bill that is due, which is usually on a monthly basis.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <a href="https://www.apple.com/" target="_blank"><img src="img/logo1.png" alt="Our Client"></a>
+            </div>
+            <div class="client-item">
+                <a href="https://www.microsoft.com/en-in" target="_blank"><img src="img/logo2.png" alt="Our Client"></a>
+            </div>
+          
+            <div class="client-item">
+                <a href="https://www.hp.com/in-en/home.html" target="_blank"><img src="img/logo3.png" alt="Our Client"></a>
+            </div>
+            <div class="client-item">
+                <a href="https://www.skype.com/en/" target="_blank"><img src="img/logo4.png" alt="Our Client"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="text" id="text" cols="30" rows="10" placeholder="Enter your feedback"></textarea>
+                </div>
+                <button class="btn" id="sub_btn">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.nationbank.com. All rights reserved!
+        </div>
+    </footer>
+    <script>
+        let x=document.getElementById('btn');
+            x.onclick=function(){
+            location.href="loan.html";
+        }
+
+        let y=document.getElementById('sub_btn');
+             y.onclick=function(){
+            alert("Thank you for sharing your feedback!");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nation Bank-Saving Account Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="nationbank.com"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Back To Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Saving Account</h1>
+
+        <div class="container">
+            
+            <p>Enter your details and submit this form to make a Saving Account in the Bank</p>
+            
+            <form action="save.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input type="text" name="age" id="age" placeholder="Enter your Age">
+                <input type="text" name="gender" id="gender" placeholder="Enter your gender" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="phone" name="phone" id="phone" placeholder="Enter your phone number" required>
+                <input type="text" name="aadhar" id="aadhar" placeholder="Enter your aadhar card number" required>
+                <input type="text" name="address" id="address" placeholder="Enter your residence" required>
+                <input type="text" name="income" id="income" placeholder="Enter your net income" required>
+                <input type="text" name="amount" id="amount" placeholder="Enter amount to deposit (minimum 5000 Rs)" required>
+                
+                <input type="submit" value="Submit" name="submit"> 
+
+            </form>
+        </div>
+        <footer>
+            <div class="center">
+                Copyright &copy; www.worldbank.com. All rights reserved!
+            </div>
+        </footer>
+        </body>
+
+        </html>

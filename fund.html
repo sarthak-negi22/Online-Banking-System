@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nation Bank-Funds Transfer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <a href="index.html"><img src="logo.png" alt="nationbank.com"></a>
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Back To Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="services-container">
+        <h1 class="h-primary center">Funds Transfer</h1>
+
+        <div class="container">
+            
+            <p>Enter the following details to transfer the funds</p>
+            
+            <form action="fund.php" method="POST">
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <input type="text" name="accno" id="accno" placeholder="Enter your account number" required>
+                <input type="text" name="ifsc" id="ifsc" placeholder="Enter other person's IFSC Code" required>
+                <input type="text" name="accno_2" id="accno_2" placeholder="Enter account number of the person you want to transfer to " required>
+                <input type="text" name="amount" id="amount" placeholder="Enter amount to transfer" required>
+                
+                <input type="submit" value="Transfer" name="Transfer"> 
+
+            </form>
+        </div>
+        <footer>
+            <div class="center">
+                Copyright &copy; www.nationbank.com. All rights reserved!
+            </div>
+        </footer>
+    </body>
+    
+    </html>
